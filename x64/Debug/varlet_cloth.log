@@ -1,0 +1,17 @@
+﻿  Application.cpp
+C:\Users\aviv studio\Desktop\Develop\pikuma2d\varlet_cloth\src\Application.cpp(23,16): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+C:\Users\aviv studio\Desktop\Develop\pikuma2d\varlet_cloth\src\Application.cpp(24,16): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+C:\Users\aviv studio\Desktop\Develop\pikuma2d\varlet_cloth\src\Application.cpp(26,48): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\aviv studio\Desktop\Develop\pikuma2d\varlet_cloth\src\Application.cpp(129,26): warning C4305: '=': truncation from 'double' to 'float'
+  Stick.cpp
+C:\Users\aviv studio\Desktop\Develop\pikuma2d\varlet_cloth\src\Physics\Stick.cpp(24,105): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\aviv studio\Desktop\Develop\pikuma2d\varlet_cloth\src\Physics\Stick.cpp(24,83): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\aviv studio\Desktop\Develop\pikuma2d\varlet_cloth\src\Physics\Stick.cpp(24,61): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\aviv studio\Desktop\Develop\pikuma2d\varlet_cloth\src\Physics\Stick.cpp(24,39): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\aviv studio\Desktop\Develop\pikuma2d\varlet_cloth\src\Physics\Stick.cpp(49,53): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\aviv studio\Desktop\Develop\pikuma2d\varlet_cloth\src\Physics\Stick.cpp(49,33): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\aviv studio\Desktop\Develop\pikuma2d\varlet_cloth\src\Physics\Stick.cpp(50,53): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\aviv studio\Desktop\Develop\pikuma2d\varlet_cloth\src\Physics\Stick.cpp(50,33): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+  Generating Code...
+x64\Debug\Stick.obj : warning LNK4042: object specified more than once; extras ignored
+  varlet_cloth.vcxproj -> C:\Users\aviv studio\Desktop\Develop\pikuma2d\varlet_cloth\x64\Debug\varlet_cloth.exe
