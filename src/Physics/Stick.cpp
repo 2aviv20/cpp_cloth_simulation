@@ -1,12 +1,12 @@
 #include "Stick.h"
 #include "Particle_varlet.h"
 
-//Stick::Stick(ParticleVarlet* p0, ParticleVarlet* p1, float length) {
-//	this->p0 = p0;
-//	this->p1 = p1;
-//	this->length = length;
-//}
-Stick::Stick(ParticleVarlet* p0, ParticleVarlet* p1, float length) : p0(p0), p1(p1), length(length) {}
+Stick::Stick(ParticleVarlet* p0, ParticleVarlet* p1, float length) {
+	this->p0 = p0;
+	this->p1 = p1;
+	this->length = length;
+}
+//Stick::Stick(ParticleVarlet* p0, ParticleVarlet* p1, float length) : p0(p0), p1(p1), length(length) {}
 
 Vec2 Stick::getDifference() {
     float diffX = this->p0->position.x - this->p1->position.x;
