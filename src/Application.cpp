@@ -15,7 +15,6 @@ void Application::Setup() {
     mouse = new Mouse();
 
 
-
     int clothSpacing = 15;
     int clothWidth = 300/clothSpacing;
     int clothHeight = 300/clothSpacing;
@@ -24,13 +23,14 @@ void Application::Setup() {
     int startY = Graphics::Height() * 0.1f;
 
     cloth = new Cloth(clothWidth, clothHeight, clothSpacing, startX, startY);
+    timePreviousFrame = SDL_GetTicks();
 
     // A === B
     // *     *
     // *     *
     // *     *
     // C === D
-    //ParticleVarlet* pA = new ParticleVarlet(220, 20, 10.0f);
+    ParticleVarlet* pA = new ParticleVarlet(220, 20, 10.0f);
     //ParticleVarlet* pB = new ParticleVarlet(320, 20, 10.0f);
     //ParticleVarlet* pC = new ParticleVarlet(220, 120, 10.0f);
     //ParticleVarlet* pD = new ParticleVarlet(320, 120, 10.0f);
@@ -40,7 +40,7 @@ void Application::Setup() {
     //Stick* sBD = new Stick(pB, pD, 100);
     //Stick* sCB = new Stick(pC, pB, 100);
     //Stick* sAD = new Stick(pA, pD, 100);
-    //particleVarlet.push_back(pA);
+    particleVarlet.push_back(pA);
     //particleVarlet.push_back(pB);
     //particleVarlet.push_back(pC);
     //particleVarlet.push_back(pD);
@@ -53,9 +53,6 @@ void Application::Setup() {
 
 }
 
-///////////////////////////////////////////////////////////////////////////////
-// Input processing
-///////////////////////////////////////////////////////////////////////////////
 void Application::Input()
 {
     SDL_Event event;
@@ -118,6 +115,7 @@ void Application::Input()
 }
 
 
+
 void Application::Update() {
     // Wait some time until the reach the target frame time in milliseconds
     int timeToWait = MILLISECS_PER_FRAME - (SDL_GetTicks() - timePreviousFrame);
@@ -130,22 +128,11 @@ void Application::Update() {
     // Set the time of the current frame to be used in the next one
     timePreviousFrame = SDL_GetTicks();
 
-    //for (auto p: particleVarlet) {
-    //    p->varlet(deltaTime);
-    //}
-    ///*std::cout << "x: " + particleVarlet[0]->x, "y: " + particleVarlet[0]->y;*/
-    //for (auto s : sticks) {
-    //    s->Update();
-    //}
-
-
-
+    //invoke all updates 
     cloth->Update(mouse,deltaTime);
 }
 
-///////////////////////////////////////////////////////////////////////////////
-// Render function (called several times per second to draw objects)
-///////////////////////////////////////////////////////////////////////////////
+
 void Application::Render() {
     Graphics::ClearScreen(0xFF056263);
 
@@ -155,24 +142,19 @@ void Application::Render() {
     //for (auto stick : sticks) {
     //    stick->Draw();
     //}
-    //
-
-
-
+    
     cloth->Draw();
+
     Graphics::RenderFrame();
 }
 
-///////////////////////////////////////////////////////////////////////////////
-// Destroy function to delete objects and close the window
-///////////////////////////////////////////////////////////////////////////////
 void Application::Destroy() {
-    for (auto particle: particleVarlet) {
-        delete particle;
-    }
-    for (auto stick : sticks) {
-        delete stick;
-    }
-    //delete cloth;
+    //for (auto particle: particleVarlet) {
+    //    delete particle;
+    //}
+    //for (auto stick : sticks) {
+    //    delete stick;
+    //}
+    delete cloth;
     Graphics::CloseWindow();
 }

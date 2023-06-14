@@ -28,7 +28,6 @@
     <ClCompile Include="src\Mouse.cpp" />
     <ClCompile Include="src\Physics\Cloth.cpp" />
     <ClCompile Include="src\Physics\Particle_varlet.cpp" />
-    <ClCompile Include="src\Physics\Particle.cpp" />
     <ClCompile Include="src\Physics\Stick.cpp" />
     <ClCompile Include="src\Physics\Stick.h" />
     <ClCompile Include="src\Physics\Vec2.cpp" />
@@ -44,7 +43,6 @@
     <ClInclude Include="src\Physics\Cloth.h" />
     <ClInclude Include="src\Physics\Constants.h" />
     <ClInclude Include="src\Physics\Particle_varlet.h" />
-    <ClInclude Include="src\Physics\Particle.h" />
     <ClInclude Include="src\Physics\Vec2.h" />
   </ItemGroup>
   <ItemGroup>

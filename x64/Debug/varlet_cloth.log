@@ -1,1 +1,6 @@
-﻿
+﻿  Application.cpp
+C:\Users\aviv studio\Desktop\Develop\pikuma2d\varlet_cloth\src\Application.cpp(21,16): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+C:\Users\aviv studio\Desktop\Develop\pikuma2d\varlet_cloth\src\Application.cpp(22,16): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+C:\Users\aviv studio\Desktop\Develop\pikuma2d\varlet_cloth\src\Application.cpp(24,48): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\aviv studio\Desktop\Develop\pikuma2d\varlet_cloth\src\Application.cpp(126,26): warning C4305: '=': truncation from 'double' to 'float'
+  varlet_cloth.vcxproj -> C:\Users\aviv studio\Desktop\Develop\pikuma2d\varlet_cloth\x64\Debug\varlet_cloth.exe

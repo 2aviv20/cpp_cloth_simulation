@@ -2,7 +2,6 @@
 #define APPLICATION_H
 
 #include "./Graphics.h"
-#include "./Physics/Particle.h"
 #include "./Physics/Particle_varlet.h"
 #include "./Physics/Stick.h"
 #include "./Physics/Cloth.h"
@@ -12,7 +11,6 @@
 class Application {
     private:
         bool running = false;
-        std::vector<Particle*> particles;
         std::vector<ParticleVarlet*> particleVarlet;
         std::vector<Stick*> sticks;
         Cloth* cloth;
